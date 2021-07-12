@@ -94,7 +94,7 @@
           
 
           taskItems.map((item,index) => {
-            return(<TouchableOpacity onPress = {() => completeTask(item)}>
+            return(<TouchableOpacity key = {index} onPress = {() => completeTask(item)}>
                  <Task text = {item} isDone = {done[index]}/>
             </TouchableOpacity>)
             
